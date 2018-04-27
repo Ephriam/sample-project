@@ -1,0 +1,7 @@
+{
+  "db": {
+    "database": "loopback-tasklist",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}
