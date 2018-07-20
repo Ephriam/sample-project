@@ -17,21 +17,12 @@
     }
   },
   "validations": [],
-  "relations": {
-    "user-tasklist": {
-      "type": "belongsTo",
-      "model": "User",
-      "foreignKey": "userId",
-      "options": {
-        "nestRemoting": true
-      }
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$unauthenticated",
+      "principalId": "$everyone",
       "permission": "DENY"
     }
   ],

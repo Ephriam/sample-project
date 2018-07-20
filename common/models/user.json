@@ -1,0 +1,26 @@
+{
+    "name": "user",
+    "base": "User",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {},
+    "validations": [],
+    "relations": {
+      "tasklists": {
+        "type": "hasMany",
+        "model": "tasklist"
+      }
+    },
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property":"*"
+      }
+    ],
+    "methods": {}
+  }
+  
